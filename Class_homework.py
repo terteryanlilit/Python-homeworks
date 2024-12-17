@@ -52,19 +52,16 @@ if __name__ == "__main__":
 
     company = Organization("Tech Solutions")
 
-
     person = Person("John Doe", 30)
     employee = Employee("Jane Smith", 28, "Developer")
     manager = Manager("Alice Johnson", 40,  "IT")
     intern = Intern("Mike Brown", 22, 6)
 
-    # Add members to the organization
     company.add_member(person)
     company.add_member(employee)
     company.add_member(manager)
     company.add_member(intern)
 
-    # Print member information
     company.list_members()
     print(manager.manage())
     print(intern.intern_info())
